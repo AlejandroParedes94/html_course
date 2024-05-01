@@ -14,7 +14,21 @@
                 border-collapse:collapse;
                 border: 3px solid red; 
                 text-align: center;
+                padding: 8px
             }
+
+            thead {
+                background-color: pink;
+            }
+
+            tbody {
+                background-color: lightgreen;
+            }
+
+            tbody > tr:nth-child(1) > td {
+                background-color: cyan;
+            }
+
         </style>
         
     </head>
@@ -23,7 +37,7 @@
         
         <table>
             <thead>
-                <tr>
+                <tr> <!-- tr = table row = fila de tabla -->
                     <th>
                         Nombres
                     </th>
@@ -46,7 +60,7 @@
             <tbody>
 
                 <tr>
-                    <td>
+                    <td> <!-- td = table dell = celda de tabla -->
                         Alejandro
                     </td>
                     
@@ -120,6 +134,19 @@
                     
                     <td>
                         56
+                    </td>
+
+                    <td>
+                        Zanja reyuna 2372
+                    </td>
+                    
+                    <td>
+                        23120902
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" >
+                        Roberto
                     </td>
 
                     <td>
